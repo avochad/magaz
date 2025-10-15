@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог - Интернет магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Магазин</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Каталог товаров</h1>
+        <div class="filters">
+            <input type="text" id="search" placeholder="Поиск товаров...">
+            <select id="category">
+                <option value="">Все категории</option>
+                <option value="electronics">Электроника</option>
+                <option value="clothing">Одежда</option>
+            </select>
+        </div>
+        
+        <div class="products-grid" id="products-container">
+            <!-- Товары будут загружены через JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Интернет магазин. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

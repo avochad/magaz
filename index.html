@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Интернет магазин</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">Магазин</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="catalog.html">Каталог</a></li>
+                <li><a href="cart.html">Корзина (<span id="cart-count">0</span>)</a></li>
+                <li><a href="register.html">Регистрация</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Добро пожаловать в наш магазин!</h1>
+            <p>Лучшие товары по доступным ценам</p>
+            <a href="catalog.html" class="btn">Перейти в каталог</a>
+        </section>
+
+        <section class="featured-products">
+            <h2>Популярные товары</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="images/products/product1.jpg" alt="Товар 1">
+                    <h3>Товар 1</h3>
+                    <p class="price">1000 руб.</p>
+                    <button class="add-to-cart" data-id="1">В корзину</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/products/product2.jpg" alt="Товар 2">
+                    <h3>Товар 2</h3>
+                    <p class="price">1500 руб.</p>
+                    <button class="add-to-cart" data-id="2">В корзину</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Интернет магазин. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
